@@ -180,7 +180,7 @@ resource "aws_autoscaling_policy" "main" {
     target_value = 75.0
   }
 }
-# Backed-alb listener rule adding
+#  listener rule adding
 resource "aws_lb_listener_rule" "main" {
   listener_arn = local.alb_listener_arn
   priority     = var.rule_priority
